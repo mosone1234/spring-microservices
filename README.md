@@ -20,9 +20,9 @@ port: 8072
 
 cd ~/Documents/spring-microservices/user-service
 
-port: 8073
-
 mvn spring-boot:run
+
+port: 8073
 
 ## Run APi-GATEWAY Service. eureka client
 
@@ -33,11 +33,12 @@ mvn spring-boot:run
 port: 9191
 
 ```
+MICROSERVICES
 a service registry (Eureka Server)
 a REST service, which registers itself at the registry (Eureka Client)
 a web application, which is consuming the REST service as a registry-aware client (Spring Cloud Netflix Feign Client)``
 
-## License
+## References
 [Spring cloud netflix eureka](https://www.baeldung.com/spring-cloud-netflix-eureka)
 
 ```
